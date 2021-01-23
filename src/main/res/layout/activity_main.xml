@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/recommended_workouts"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton5" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/black"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="136dp"
+            android:layout_height="69dp"
+            android:text="@string/fitsta"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/white"
+            android:textSize="@android:dimen/app_icon_size"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/notibell"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:adjustViewBounds="false"
+            android:background="#D81B60"
+            android:contentDescription="@string/notibell"
+            android:scaleType="fitXY"
+            android:src="@drawable/noti_bell"
+            app:layout_constraintEnd_toEndOf="@+id/toolbar"
+            app:layout_constraintHorizontal_bias="0.858"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="400dp"
+            android:layout_height="180dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/cartoon_people_workingout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="332dp"
+            android:text="@string/button_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontal1" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontal1"
+            android:layout_width="409dp"
+            android:layout_height="206dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/womensquat"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:contentDescription="@string/womensquat"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/legs_women" />
+
+                <ImageButton
+                    android:id="@+id/guyscurling"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="60dp"
+                    android:contentDescription="@string/guyscurling"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/two_guys_workingout"
+                    app:layout_constraintStart_toEndOf="@id/womensquat"
+                    app:layout_constraintTop_toTopOf="@id/womensquat" />
+
+                <ImageButton
+                    android:id="@+id/womenpushup"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="60dp"
+                    android:contentDescription="@string/womenpushup"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/women_workingout"
+                    app:layout_constraintStart_toEndOf="@id/guyscurling"
+                    app:layout_constraintTop_toTopOf="@id/guyscurling"
+                    tools:src="@drawable/women_workingout" />
+
+                <ImageButton
+                    android:id="@+id/menchest"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="60dp"
+                    android:contentDescription="@string/chest"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/chest_men"
+                    app:layout_constraintStart_toEndOf="@id/womenpushup"
+                    app:layout_constraintTop_toTopOf="@id/womenpushup"
+                    tools:src="@drawable/chest_men" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/celebrity_workouts"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/textView2"
+            app:layout_constraintTop_toBottomOf="@id/horizontal1" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontal2"
+            android:layout_width="409dp"
+            android:layout_height="206dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView3">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/celebrity_1"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:contentDescription="@string/womensquat"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/celebrity_1" />
+
+                <ImageButton
+                    android:id="@+id/celebrity_2"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="60dp"
+                    android:contentDescription="@string/guyscurling"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/celebrity_2"
+                    app:layout_constraintStart_toEndOf="@id/celebrity_1"
+                    app:layout_constraintTop_toTopOf="@id/celebrity_1" />
+
+                <ImageButton
+                    android:id="@+id/celebrity_3"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="60dp"
+                    android:contentDescription="@string/womenpushup"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/celebrity_3"
+                    app:layout_constraintStart_toEndOf="@id/celebrity_2"
+                    app:layout_constraintTop_toTopOf="@id/celebrity_2"
+                    tools:src="@drawable/celebrity_3" />
+
+                <ImageButton
+                    android:id="@+id/celebrity_4"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="60dp"
+                    android:contentDescription="@string/chest"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/celebrity_4"
+                    app:layout_constraintStart_toEndOf="@id/celebrity_3"
+                    app:layout_constraintTop_toTopOf="@id/celebrity_3"
+                    tools:src="@drawable/celebrity_4" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </HorizontalScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+
+
+
+
+
+
+
+
+

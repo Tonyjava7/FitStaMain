@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Home Page Fitsta</string>
+    <string name="fitsta">Fitsta</string>
+    <string name="recommended_workouts">Recommended Workouts</string>
+    <string name="notibell">notibell</string>
+    <string name="chest">chest</string>
+    <string name="womensquat">womensquat</string>
+    <string name="womenpushup">womenpushup</string>
+    <string name="guyscurling">guyscurling</string>
+    <string name="button_1">Button 1</string>
+    <string name="button">Button</string>
+    <string name="button_3">button 3</string>
+    <string name="button_23234">Button 23234</string>
+    <string name="celebrity_workouts">Celebrity Workouts</string>
+</resources>
