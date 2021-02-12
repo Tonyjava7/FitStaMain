@@ -12,4 +12,13 @@
     <string name="button_3">button 3</string>
     <string name="button_23234">Button 23234</string>
     <string name="celebrity_workouts">Celebrity Workouts</string>
+    <string name="challenges">challenges</string>
+    <string name="challengeimage">challengeimage</string>
+    <string name="challenges1">Challenges</string>
+    <string name="customize">Customize</string>
+    <string name="bodypart2">bodypart2</string>
+    <string name="body_parts">Body Parts</string>
+    <string name="todo1">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="todo">TODO</string>
 </resources>
